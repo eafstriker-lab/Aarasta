@@ -465,52 +465,108 @@ export const shopTheLookRooms = [
 export const journalPosts: JournalPost[] = [
   {
     id: "journal-1",
-    title: "The Architecture of Quiet",
-    excerpt: "How selecting materials with historical patina shapes our psychological concept of home.",
-    date: "June 14, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=800&q=80",
-    category: "Space Theory",
-    author: "Aarav Mehra",
-    content: "Space has a physical voice. In our contemporary rush to populate rooms with sterile, machine-perfect surfaces, we have inadvertently severed the link between texture and emotional tranquility. The Architecture of Quiet is an inquiry into how natural, aged patinas serve as spatial anchors for the human psyche.",
+    title: "How to Clean Brass Decor",
+    excerpt:
+      "Keep your brass decor shining for years with a few simple cleaning tips you can do at home.",
+    date: "June 29, 2026",
+    readTime: "4 min read",
+    image: "/cleaningBrass.webp",
+    category: "Care Guide",
+    author: "Team Aarasta",
+    content:
+      "Brass decor naturally develops a deeper, richer look over time. Some people love this antique finish, while others prefer the bright golden shine. The good news is that keeping your brass pieces beautiful doesn't require expensive products or a lot of effort. With just a little care, your decor can stay elegant for years.",
     bodyBlocks: [
       {
-        subheading: "The Patina of Time",
-        text: "When a material has lived, it tells a silent story. Raw teak, untreated copper, and hand-beaten brass do not degrade; they grow. They respond to humidity, to the oils of human skin, and to the path of direct sunlight. This evolution offers an architecture of reassurance—an honest acknowledgment that time is an ally, not an enemy."
+        subheading: "Dust Regularly",
+        text: "The easiest way to keep brass decor looking beautiful is to dust it once or twice a week with a soft, dry microfiber cloth. This prevents dirt from building up and helps maintain its natural shine. Avoid using rough cloths or scrubbers, as they can leave small scratches on the surface."
       },
       {
-        subheading: "Atmospheric Balance",
-        text: "Designing for quiet is not about silence; it is about resonance. A room with soft-glazed earthenware can temper sound waves, while low-slung wooden benches lower our physical center of gravity. By combining textured fabrics with heavy, earthy foundations, we create sanctuaries where the mind can finally rest.",
-        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+        subheading: "Clean with Mild Soap and Warm Water",
+        text: "If your brass decor starts looking dull, wipe it gently with a soft cloth dipped in warm water mixed with a few drops of mild liquid soap. Clean the surface carefully and dry it immediately with a clean towel. Leaving water on brass for a long time may cause water spots."
       },
       {
-        subheading: "Curating the Void",
-        text: "The final element of quiet is negative space. Allowing a corner to remain entirely unoccupied is a luxury. It allows light to draw shapes across the floor and lets the eye travel without interruption. When you place a single, handcrafted vessel in a vast room, you give that object room to breathe, and in doing so, you invite the inhabitant to do the same."
+        subheading: "Avoid Harsh Chemicals",
+        text: "Strong cleaning chemicals, bleach, or abrasive powders can damage the finish of brass decor. We always recommend using gentle cleaning methods. If you're unsure about a product, test it on a small hidden area first."
+      },
+      {
+        subheading: "Keep It Away from Moisture",
+        text: "Brass looks its best in a clean, dry environment. Try not to place brass decor in areas with constant moisture or direct rain. Indoor spaces like living rooms, dining areas, and entryways are ideal for displaying these beautiful pieces."
+      },
+      {
+        subheading: "A Small Tip from Aarasta",
+        text: "Every handcrafted brass piece tells a story. Small changes in colour over time are completely natural and are part of the charm of real brass. If you enjoy the vintage look, let it age gracefully. If you prefer a brighter finish, regular gentle cleaning will help keep its original glow."
       }
     ]
   },
+
   {
     id: "journal-2",
-    title: "Chisel, Silt & Earth",
-    excerpt: "Journey to the serene workshop sanctuaries of Agra's master stonecarvers.",
-    date: "May 28, 2026",
-    readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1565192647048-f997ed87f5e2?auto=format&fit=crop&w=800&q=80",
-    category: "Craft Study",
-    author: "Prerna Joshi",
-    content: "Beneath the architectural shadows of old India, a silent choreography of chiseling steel, soft sand abrasion, and physical grit unfolds. This is where natural soapstone and sandstone acquire their velvety skin.",
+    title: "Why Do People Keep a Laughing Buddha at Home?",
+    excerpt:
+      "Discover the meaning behind the Laughing Buddha and learn how this timeless decor piece brings warmth, positivity, and character to your living space.",
+    date: "June 29, 2026",
+    readTime: "4 min read",
+    image: "/images/idols/laughingbudha.webp",
+    category: "Decor Guide",
+    author: "Team Aarasta",
+    content:
+      "The Laughing Buddha is one of the most loved decorative sculptures around the world. Beyond its beautiful craftsmanship, it is often seen as a symbol of happiness, contentment, abundance, and positive energy. Whether you appreciate its cultural significance or simply love its calming appearance, it can become a meaningful addition to your home.",
     bodyBlocks: [
       {
-        subheading: "The Sculpture from the Block",
-        text: "Unlike modern computer-guided drills, traditional stonecarving happens block by block, chisel blow by chisel blow. Master craftspeople sit cross-legged on fiber mats, listening to the high-pitched ring of metal hitting stone. A deeper ring indicates a stable, dense layer; a hollow pitch warns of internal micro-fissures."
+        subheading: "A Symbol of Joy and Positivity",
+        text: "The smiling face of the Laughing Buddha is often associated with happiness, optimism, and a peaceful mindset. Many people place it in their homes because it reminds them to focus on gratitude and enjoy life's simple moments."
       },
       {
-        subheading: "The Art of the Silt Polish",
-        text: "Before the soapstone temple can be declared complete, it is hand-rubbed with fine river silt. The microscopic grains act as an organic abrasive, smoothing out chisel scars without erasing the tactile, hand-hewn facets. It is an art form of sheer concentration and absolute muscle memory."
+        subheading: "Adds Character to Your Decor",
+        text: "A beautifully crafted Laughing Buddha can become the centerpiece of a console table, living room shelf, or entrance area. It blends well with both traditional and modern interiors, adding warmth and elegance to the space."
       },
       {
-        subheading: "Preserving the Lineage",
-        text: "This delicate process cannot be replicated by robotic sand-cutters. It relies on a human sense of symmetry and natural material grain. Our collective mission is to support these families, ensuring that the rhythm of chiseling stone continues to hum across Northern India's ancient carving quarters."
+        subheading: "Where Can You Place It?",
+        text: "Many homeowners choose to display a Laughing Buddha in the living room, entrance, study, or meditation corner. Wherever you place it, choose a clean and uncluttered space where its beauty can be appreciated. It should be displayed with care and respect rather than tucked away in a crowded corner."
+      },
+      {
+        subheading: "More Than Just a Decorative Piece",
+        text: "For some, the Laughing Buddha carries cultural or spiritual meaning. For others, it is simply a beautiful work of art that creates a calming atmosphere. Whatever your reason, it is a timeless decor piece that never goes out of style."
+      },
+      {
+        subheading: "A Note from Aarasta",
+        text: "At Aarasta, every sculpture is chosen for its craftsmanship, beauty, and timeless appeal. Whether you decorate your home for its aesthetics or its meaning, we believe every piece should bring warmth, peace, and a personal touch to your living space."
+      }
+    ]
+  },
+
+  {
+    id: "journal-3",
+    title: "Thoughtful Office Decor Gifts They'll Actually Use",
+    excerpt:
+      "Looking for a gift that's both beautiful and practical? Here are timeless decor ideas that can make any office or workspace feel more welcoming and inspiring.",
+    date: "June 29, 2026",
+    readTime: "5 min read",
+    image: "/officeDecor.webp",
+    category: "Gift Guide",
+    author: "Team Aarasta",
+    content:
+      "Choosing the perfect office gift doesn't have to be difficult. Instead of giving something that ends up in a drawer, choose decor that adds warmth, personality, and style to a workspace. A thoughtfully chosen piece can brighten a desk, create a welcoming atmosphere, and leave a lasting impression every day.",
+    bodyBlocks: [
+      {
+        subheading: "Decor That Makes Every Desk Feel Special",
+        text: "Small decorative sculptures, elegant clocks, or handcrafted showpieces can instantly make a workspace feel more inviting. These are gifts people enjoy seeing every day, making them both meaningful and practical."
+      },
+      {
+        subheading: "Choose Timeless Designs",
+        text: "Neutral colours, brass accents, marble finishes, and handcrafted pieces suit almost every office style. Timeless decor blends easily with both modern corporate spaces and home offices, making your gift suitable for anyone."
+      },
+      {
+        subheading: "Perfect for Every Occasion",
+        text: "Office decor makes a thoughtful gift for work anniversaries, promotions, farewell parties, client appreciation, housewarming celebrations, or simply as a gesture of thanks. A well-chosen decor piece feels personal without being overly formal."
+      },
+      {
+        subheading: "Keep It Simple and Elegant",
+        text: "When choosing office decor, avoid items that are too large or overly colourful. Compact sculptures, decorative clocks, artistic figurines, or handcrafted accents are easy to place on desks, shelves, or reception areas while adding a touch of elegance."
+      },
+      {
+        subheading: "A Note from Aarasta",
+        text: "At Aarasta, we believe a thoughtful gift should be something people enjoy for years, not just a moment. Every handcrafted piece is selected to bring beauty, warmth, and timeless style to homes and workspaces alike."
       }
     ]
   }
