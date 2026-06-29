@@ -52,14 +52,14 @@ export default function FeaturedCollections() {
                 <div className="absolute inset-0 bg-gradient-to-t from-rich-charcoal/80 via-rich-charcoal/30 to-transparent transition-opacity duration-700" />
 
                 {/* Editorial Text Overlay with backdrop-blur for improved text readability */}
-                <div className="absolute inset-x-4 bottom-4 p-5 md:p-6 z-10 text-warm-ivory bg-rich-charcoal/45 backdrop-blur-md rounded-2xl border border-warm-ivory/15 shadow-lg flex flex-col justify-end transition-all duration-500 hover:bg-rich-charcoal/55">
-                  {/* Top line: count */}
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-muted-brass font-bold bg-rich-charcoal/30 px-2.5 py-0.5 rounded">
-                      {collection.count}
-                    </span>
-                  </div>
-
+                <div 
+                  className="absolute bottom-0 left-0 right-0 w-full p-6 md:p-8 z-10 text-warm-ivory flex flex-col justify-end transition-all duration-500"
+                  style={{ 
+                    backdropFilter: "blur(5px)", 
+                    WebkitBackdropFilter: "blur(5px)", 
+                    backgroundColor: "rgba(0,0,0,0.2)" 
+                  }}
+                >
                   {/* Bottom details */}
                   <div className="space-y-2">
                     <h3 className="font-serif text-xl md:text-2xl text-warm-ivory tracking-wide leading-tight">

@@ -71,6 +71,13 @@ export interface JournalPost {
   readTime: string;
   image: string;
   category: string;
+  author?: string;
+  content?: string;
+  bodyBlocks?: {
+    subheading?: string;
+    text: string;
+    image?: string;
+  }[];
 }
 
 export interface Testimonial {

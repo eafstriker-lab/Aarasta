@@ -1,166 +1,200 @@
 import { ProductDetail, MasonryTile, Hotspot, JournalPost, Testimonial } from "./types";
 
-// Master list of product details (all expensive, highly-considered luxury artifacts)
+// Master list of product details (10 Sacred Idols with custom images provided)
 export const masterProducts: Record<string, ProductDetail> = {
-  "terracotta-urn": {
-    id: "terracotta-urn",
-    title: "The Kansa Terracotta Urn",
-    subtitle: "Clay thrown by hand in Kutch, sun-baked & smoke-fired.",
-    category: "Ceramics",
-    price: "₹18,500",
-    image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Passed down through six generations, the black-clay pottery of Kutch relies on clay harvested from local lake beds. Each urn is burnished with a polished stone to seal the pores before being smoke-fired in a subterranean pit filled with local firewood and dry leaves.",
-    material: "100% Organic Wild Kutch Terracotta Clay",
-    dimensions: "Diameter: 32cm, Height: 48cm",
-    craftsmanship: "Individually wheel-thrown and wood-ash pit-fired, resulting in unique charcoal-gray and warm sienna mottling.",
-    styling: "Position as a standalone floor piece in a sunlit corner, or pair with dried eucalyptus branches on a low wooden plinth.",
-    care: "Wipe with a soft dry cloth. Do not use chemical detergents. For dry decorative use only.",
-    complementaryIds: ["brass-oil-lamp", "minimalist-bench"]
+  "buddha": {
+    id: "buddha",
+    title: "The Meditative Dhyana Buddha",
+    subtitle: "Serene dhyana mudra pose cast in high-purity ceremonial bronze.",
+    category: "Idols",
+    price: "₹24,500",
+    image: "/images/idols/buddha.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Representing absolute inner stability and mindfulness, this Dhyana Buddha is cast using historical lost-wax methods. The serene, closed eyes and perfectly proportioned hands resting in the mudra of meditation provide a visual anchor for any silent reading or meditation space.",
+    material: "Ceremonial Bell Metal Bronze Alloy",
+    dimensions: "Width: 16cm, Depth: 12cm, Height: 24cm",
+    craftsmanship: "Individually modeled in beeswax, packed in river clay, and poured by generational metal casters in Bastar.",
+    styling: "Anchor on a low wooden shelf or stone tablet under soft, indirect lighting. Surround with clean, empty space.",
+    care: "Wipe with a dry fiber cloth. Do not polish with aggressive acids or chemicals; allow natural oxidation to darken crevices.",
+    complementaryIds: ["temple", "buddha1"]
   },
-  "brass-oil-lamp": {
-    id: "brass-oil-lamp",
-    title: "Mridang Brass Oil Vessel",
-    subtitle: "Lost-wax cast solid brass with a hand-burnished oil finish.",
-    category: "Brass Decor",
-    price: "₹12,200",
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Inspired by the classical percussion instrument, the Mridang brass vessel is hand-poured in Aligarh using ancient sand-casting techniques. The warm, soft luster is achieved through hours of manual polishing with tamarind pulp and coconut oil.",
-    material: "Solid Poured Brass, Raw Finish",
-    dimensions: "Diameter: 14cm, Height: 22cm",
-    craftsmanship: "Lost-wax cast and meticulously turned by hand on historic wooden lathes.",
-    styling: "Sits beautifully on a marble coffee table or nestled among art books. Captures low, warm ambient light wonderfully.",
-    care: "Brass will naturally develop a rich, dark patina over time. To restore bright finish, polish gently with brass cleaning compound.",
-    complementaryIds: ["terracotta-urn", "clay-incense-tray"]
+  "buddha1": {
+    id: "buddha1",
+    title: "The Stone-Carved Buddha Shrine",
+    subtitle: "Hand-sculpted sand-colored stone with micro-burnished details.",
+    category: "Vintage",
+    price: "₹28,000",
+    image: "/images/idols/buddha1.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Sculpted from a single block of natural sandstone sourced from the Vindhyan range, this Buddha portrait captures the transcendental peace of classic Sarnath sculpture. The surface has been hand-rubbed with fine river silt to yield a matte, velvety texture.",
+    material: "Solid Vindhyan Sandstone",
+    dimensions: "Width: 18cm, Depth: 14cm, Height: 28cm",
+    craftsmanship: "Individually block-sculpted by hand over several weeks using traditional steel chisels.",
+    styling: "Beautifully presented in a well-lit entryway or nestled in an indoor garden setting alongside bamboo or raw gravel.",
+    care: "Dust with a clean stiff paint brush. Stone is highly resilient and handles standard ambient conditions beautifully.",
+    complementaryIds: ["buddha", "temple"]
   },
-  "minimalist-bench": {
-    id: "minimalist-bench",
-    title: "The Sonepat Teak Bench",
-    subtitle: "Reclaimed plantation teak wood, hand-scraped and tenon-joined.",
-    category: "Furniture",
-    price: "₹64,000",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Constructed entirely from seasoned, reclaimed structural beams from heritage homes in northern India, the Sonepat Bench celebrates pure geometry. It uses traditional mortise-and-tenon joints, requiring absolutely no metal hardware.",
-    material: "Solid Reclaimed Teak Wood",
-    dimensions: "Length: 120cm, Width: 35cm, Height: 45cm",
-    craftsmanship: "Each surface is hand-planed and oiled with organic linseed wax to preserve the natural grain patterns.",
-    styling: "An ideal grounding element for an entryway or at the foot of a low-slung bed. Style with a single ceramic tray.",
-    care: "Avoid direct contact with wet objects. Apply clear wood wax annually to retain luster.",
-    complementaryIds: ["terracotta-urn", "textured-plaster-canvas"]
+  "ganesha": {
+    id: "ganesha",
+    title: "Lost-Wax Cast Ganesha",
+    subtitle: "Traditional seated form with ancient organic black-wax finish.",
+    category: "Vintage",
+    price: "₹18,200",
+    image: "/images/idols/ganesha.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Representing the gentle removal of obstacles and the threshold of new beginnings. This solid metal Ganesha exhibits historic Bastar tribal features: elongated limb structure, simple wire-overlay textures, and an open, compassionate demeanor.",
+    material: "Solid Dhokra Bell Metal",
+    dimensions: "Width: 12cm, Depth: 10cm, Height: 18cm",
+    craftsmanship: "Lost-wax cast using ancient non-industrial tribal clay-pit kiln firings.",
+    styling: "Perfectly sized for a desk companion, study console, or home altar. Place it facing north-east for traditional auspicious resonance.",
+    care: "Dust with a dry microcloth. Dhokra pieces develop a wonderful deep golden sheen on raised surfaces with touch.",
+    complementaryIds: ["ganesha1", "ganesha2"]
   },
-  "clay-incense-tray": {
-    id: "clay-incense-tray",
-    title: "Sandalwood Clay Burner & Tray",
-    subtitle: "Glazed stoneware with hand-pressed wild soil texture.",
-    category: "Accessories",
-    price: "₹4,800",
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Crafted in a forest workshop outside Auroville, this tray utilizes coarse wild clays that display deep organic iron speckles when high-fired. The central well safely cradles slow-burning hand-rolled botanical incense.",
-    material: "Speckled Wild Stoneware, Raw Satin Glaze",
-    dimensions: "Length: 24cm, Width: 8cm, Height: 2cm",
-    craftsmanship: "Slab-rolled and individually detailed with custom hand-carved boxwood ribbing.",
-    styling: "A quiet companion for your study desk or bathing sanctuary. Beautiful on a stone countertop.",
-    care: "Rinse with lukewarm water and mild soap. Ash residue wipes off clean.",
-    complementaryIds: ["brass-oil-lamp", "handwoven-linen-throw"]
+  "ganesha1": {
+    id: "ganesha1",
+    title: "The Shanti Brass Ganesha",
+    subtitle: "Heavy sand-cast solid brass with a hand-burnished oil finish.",
+    category: "Home Accessories",
+    price: "₹19,500",
+    image: "/images/idols/ganesha1.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "A classical heavy representation of Lord Ganesha in a peaceful sitting posture. Poured in sand molds, this brass piece is heavy and solid, featuring a soft oil-rubbed finish that highlights the elegant contours of his trunk, ears, and crown.",
+    material: "Pure Yellow Brass Alloy",
+    dimensions: "Width: 14cm, Depth: 11cm, Height: 20cm",
+    craftsmanship: "Meticulously sand-cast and hand-finished in Aligarh with individual chisel details.",
+    styling: "Place on a dark timber console table or pair with a solid brass lamp to catch flickering candle reflections.",
+    care: "Can be cleaned with organic lemon oil or tamarind pulp if a brighter golden finish is desired over natural patina.",
+    complementaryIds: ["ganesha", "ganesha2"]
   },
-  "textured-plaster-canvas": {
-    id: "textured-plaster-canvas",
-    title: "Anant Plaster Relic Art",
-    subtitle: "Organic earthen pigments layered on jute canvas.",
-    category: "Wall Art",
-    price: "₹38,000",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "A visual meditation on decay and permanence, the Anant series is created by layering fine-sifted river sand, lime plaster, and soot onto stretched natural jute panels. The resulting cracks and textures emerge naturally as the plaster cures.",
-    material: "Lime Plaster, Sand, Charcoal and Natural Sienna on Jute Canvas",
-    dimensions: "Width: 70cm, Height: 95cm",
-    craftsmanship: "Hand-applied in multiple slow-drying stages over three weeks by artist-artisans in Rajasthan.",
-    styling: "Mount flush on warm ivory or concrete walls with generous empty wall space around it to honor its negative space.",
-    care: "Keep away from humid damp environments. Dust lightly with a clean feather-brush.",
-    complementaryIds: ["minimalist-bench", "sculptural-clay-vase"]
+  "ganesha2": {
+    id: "ganesha2",
+    title: "The Ceremonial Dancing Ganesha",
+    subtitle: "Dynamic Nritya Ganesha pose capturing fluid movement in solid bronze.",
+    category: "Idols",
+    price: "₹22,000",
+    image: "/images/idols/ganesha2.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "The Nritya (dancing) Ganesha represents creative joy, artistic flow, and cosmic playfulness. This solid metal sculpture depicts Ganesha poised gracefully on one leg, with his trunk curving dynamically to echo his energetic movement.",
+    material: "Polished Bell Metal Bronze",
+    dimensions: "Width: 15cm, Depth: 10cm, Height: 22cm",
+    craftsmanship: "Individually hand-molded and hot-cast by master metalsmiths in southern India.",
+    styling: "Style centrally on an open shelf or low mantelpiece where its rhythmic silhouette can be viewed from multiple angles.",
+    care: "Lightly dust with a soft brush. Keep away from humid bathrooms or direct water splashes.",
+    complementaryIds: ["ganesha1", "shiva"]
   },
-  "sculptural-clay-vase": {
-    id: "sculptural-clay-vase",
-    title: "Chitra Curved Stoneware Vase",
-    subtitle: "Hand-pinched asymmetric silhouette with textured slip finish.",
-    category: "Ceramics",
+  "krishna": {
+    id: "krishna",
+    title: "The Eternal Flute Krishna",
+    subtitle: "Graceful standing Venugopala pose in a soft dark brass finish.",
+    category: "Home Accessories",
+    price: "₹16,800",
+    image: "/images/idols/krishna.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Capturing the serene posture of Venugopala—Krishna playing his flute under the sacred Kadamba tree. The statue is cast in a beautiful dark antique brass finish, focusing on clean lines and fluid posture rather than excessive modern ornamentation.",
+    material: "Antique Finish Solid Brass",
+    dimensions: "Width: 10cm, Depth: 8cm, Height: 25cm",
+    craftsmanship: "Hand-poured and hand-carved, utilizing age-old hot wax sculpting methods to refine the posture.",
+    styling: "An elegant centerpiece for study bookshelves, credenzas, or quiet alcoves. Complements light raw wood wonderfully.",
+    care: "Wipe with dry microfiber only. Avoid water, which can create light spots in the dark chemical antique finish.",
+    complementaryIds: ["krishna1", "buddha"]
+  },
+  "krishna1": {
+    id: "krishna1",
+    title: "Antique Bronze Krishna",
+    subtitle: "Heirloom-grade solid bronze with heavy weight and soft golden highlights.",
+    category: "Vintage",
+    price: "₹21,000",
+    image: "/images/idols/krishna1.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Inspired by medieval Chola bronze casting traditions, this Krishna idol is heavy, balanced, and exhibits remarkable serenity. His raised hands and tilted crown present a balanced visual symmetry, representing divine beauty and poise.",
+    material: "Generational Cast Bell Bronze",
+    dimensions: "Width: 11cm, Depth: 9cm, Height: 23cm",
+    craftsmanship: "Lost-wax cast and meticulously filed by hand to expose the warm golden bronze color beneath the dark fire crust.",
+    styling: "Stands proudly on a stone pedestal or an off-white plaster canvas. Place near window light to catch its detailed profile.",
+    care: "Rub occasionally with a trace of coconut oil to keep the deep bronze surface lustrous and rich.",
+    complementaryIds: ["krishna", "buddha1"]
+  },
+  "laughingbudha": {
+    id: "laughingbudha",
+    title: "The Laughing Hotei Guardian",
+    subtitle: "Warm, grounding laughing Buddha carved in solid dense timber.",
+    category: "Home Accessories",
     price: "₹14,500",
-    image: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Hand-coiled without the aid of a potters wheel, the Chitra vase celebrates organic imperfection. It features an expressive dual-handle contour reminiscent of traditional water vessels of the Deccan plateau.",
-    material: "Iron-rich stoneware with slip trail brushing",
-    dimensions: "Diameter: 20cm, Height: 35cm",
-    craftsmanship: "Pinched and coiled by hand, finished with a subtle oatmeal slip that leaves tactile throwing rings.",
-    styling: "Complements minimalist shelving or works beautifully in groups of three uneven pots on dry oak furniture.",
-    care: "Waterproof interior glaze allows for fresh seasonal stems, though it stands fully complete as a dry sculpture.",
-    complementaryIds: ["textured-plaster-canvas", "terracotta-urn"]
+    image: "/images/idols/laughingbudha.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "Representing magnanimity, abundance, and cheerful hospitality. This Hotei figure is carved from highly seasoned, dense mango-wood stumps. The natural grain lines trace the contours of his round, laughing form, giving it an earthy, tactile presence.",
+    material: "Solid Seasoned Mango Wood",
+    dimensions: "Width: 15cm, Depth: 12cm, Height: 18cm",
+    craftsmanship: "Direct chisel carving from raw wooden stumps, finished with a coat of organic tung oil.",
+    styling: "Place on a low wooden credenza near your entrance or coffee table to invite a feeling of joy and warmth.",
+    care: "Keep away from heating vents or dry direct heat to prevent the organic wood from splitting over time.",
+    complementaryIds: ["temple", "buddha"]
   },
-  "handwoven-linen-throw": {
-    id: "handwoven-linen-throw",
-    title: "Kora Handspun Linen Throw",
-    subtitle: "Undyed organic linen handwoven on wooden fly-shuttle looms.",
-    category: "Textiles",
-    price: "₹9,500",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Woven in Bhagalpur from the finest long-staple organic flax, the Kora throw remains completely unbleached and undyed. The subtle changes in yarn thickness reflect the unique rhythm of the weaver's hands.",
-    material: "100% Hand-spun Organic Flax Linen",
-    dimensions: "Length: 220cm, Width: 150cm",
-    craftsmanship: "Hand-spun on Charkhas and hand-loomed over a period of 4 days per piece.",
-    styling: "Drape loosely over a modern linen sofa or fold meticulously along the arm of a low-profile chair.",
-    care: "Gentle hand wash with pH-neutral soap or professional dry clean. Lay flat to dry.",
-    complementaryIds: ["clay-incense-tray", "minimalist-bench"]
+  "shiva": {
+    id: "shiva",
+    title: "Meditative Nataraja Shiva",
+    subtitle: "Traditional cosmic dancer design in a dark, rich smoke-cast patina.",
+    category: "Idols",
+    price: "₹26,000",
+    image: "/images/idols/shiva.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "An accurate and beautifully sculpted Nataraja representing the cosmic dance of creation, preservation, and dissolution. Encased in a blazing halo (prabhamandala), Shiva stands on the dwarf of ignorance, holding the damaru drum and cosmic flame.",
+    material: "Heavy Bastar Bell Metal",
+    dimensions: "Width: 20cm, Depth: 10cm, Height: 26cm",
+    craftsmanship: "Entirely handcrafted by tribal artists using earth molds and wood-ash reduction fires.",
+    styling: "Position centrally on an eye-level wall console or display case. Let its grand circular frame command attention.",
+    care: "Light dusting with dry fiber cloth. The dark reduction finish is stable and requires minimal care.",
+    complementaryIds: ["temple", "ganesha2"]
   },
-  "antique-mirror": {
-    id: "antique-mirror",
-    title: "Darpan Hammered Brass Mirror",
-    subtitle: "Beveled glass encased in a hand-beaten warm brass frame.",
-    category: "Mirrors",
-    price: "₹28,500",
-    image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=1000&q=80",
-    secondaryImages: [
-      "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=80"
-    ],
-    story: "Each metal frame is individually shaped and beaten over timber molds by master coppersmiths in Pune. The metal edge reveals hundreds of subtle hammer facets that catch and bounce candle flame.",
-    material: "Beaten Sheet Brass, Premium Beveled Mirror Glass",
-    dimensions: "Diameter: 65cm, Depth: 4cm",
-    craftsmanship: "Individually hot-worked and hand-stamped with a subtle maker's crest on the rear edge.",
-    styling: "Mount at eye-level in dark hallways to visually expand the entry or hang above a low teak console table.",
-    care: "Clean glass with a soft damp microfiber cloth. Allow brass rim to naturally oxidize or polish lightly.",
-    complementaryIds: ["minimalist-bench", "brass-oil-lamp"]
+  "temple": {
+    id: "temple",
+    title: "Hand-Carved Soapstone Temple",
+    subtitle: "A miniature architectural sanctuary carved from grey soapstone.",
+    category: "Home Accessories",
+    price: "₹34,000",
+    image: "/images/idols/temple.png",
+    secondaryImages: ["/images/category_idols.png"],
+    story: "This miniature structural temple is carved from natural soft talc (soapstone), featuring detailed columns, geometric step-backs, and a hollow inner sanctuary designed to shelter a single small oil vessel or metal idol. It is a stunning visual meditation on sacred Indian geometry.",
+    material: "Natural Soft Talc Soapstone",
+    dimensions: "Width: 16cm, Depth: 16cm, Height: 30cm",
+    craftsmanship: "Symmetric stone turning and delicate manual piercing by stone artisans in Agra.",
+    styling: "Beautifully suited as the central architectural anchor of a modern home altar, or styled as a sculptural light box on bookshelves.",
+    care: "Wipe with a damp sponge. Avoid drops or sharp strikes, as soapstone is naturally delicate and soft.",
+    complementaryIds: ["shiva", "buddha"]
   }
 };
 
-// Curated masonry grid items - mixed, organic, breaking standard layouts
+// Curated masonry grid items - exclusively using our 10 beautiful idols
 export const masonryTiles: MasonryTile[] = [
   {
     type: "image",
-    id: "terracotta-urn",
-    image: masterProducts["terracotta-urn"].image,
-    title: "The Kansa Terracotta Urn",
-    category: "Ceramics",
+    id: "buddha",
+    image: masterProducts["buddha"].image,
+    title: masterProducts["buddha"].title,
+    category: "Idols",
     colSpan: "col-span-12 md:col-span-4",
     heightClass: "h-[450px] md:h-[550px]",
-    productDetail: masterProducts["terracotta-urn"]
+    productDetail: masterProducts["buddha"]
+  },
+  {
+    type: "image",
+    id: "temple",
+    image: masterProducts["temple"].image,
+    title: masterProducts["temple"].title,
+    category: "Home Accessories",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[450px] md:h-[550px]",
+    productDetail: masterProducts["temple"]
+  },
+  {
+    type: "image",
+    id: "buddha1",
+    image: masterProducts["buddha1"].image,
+    title: masterProducts["buddha1"].title,
+    category: "Vintage",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[450px] md:h-[550px]",
+    productDetail: masterProducts["buddha1"]
   },
   {
     type: "quote",
@@ -172,62 +206,71 @@ export const masonryTiles: MasonryTile[] = [
   },
   {
     type: "image",
-    id: "brass-oil-lamp",
-    image: masterProducts["brass-oil-lamp"].image,
-    title: "Mridang Brass Oil Vessel",
-    category: "Brass Decor",
+    id: "ganesha",
+    image: masterProducts["ganesha"].image,
+    title: masterProducts["ganesha"].title,
+    category: "Vintage",
     colSpan: "col-span-12 md:col-span-4",
-    heightClass: "h-[350px] md:h-[450px]",
-    productDetail: masterProducts["brass-oil-lamp"]
+    heightClass: "h-[380px] md:h-[480px]",
+    productDetail: masterProducts["ganesha"]
+  },
+  {
+    type: "image",
+    id: "shiva",
+    image: masterProducts["shiva"].image,
+    title: masterProducts["shiva"].title,
+    category: "Idols",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[450px] md:h-[550px]",
+    productDetail: masterProducts["shiva"]
   },
   {
     type: "collection",
     id: "collection-1",
-    title: "The Brass Edit",
-    subtitle: "Exploring cold-cast bronze and spun-brass forms shaped by friction and fire.",
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+    title: "Sacred Sanctuaries",
+    subtitle: "Lost-wax castings and hand-carved stone shrines created to focus quiet observation.",
+    image: "/images/category_idols.png",
     colSpan: "col-span-12 md:col-span-8",
     heightClass: "h-[350px] md:h-[400px]"
   },
   {
-    type: "video",
-    id: "clay-incense-tray",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hand-shaping-a-clay-pot-on-a-wheel-41610-large.mp4",
-    poster: masterProducts["clay-incense-tray"].image,
-    title: "Sandalwood Clay Burner & Tray",
-    category: "Accessories",
+    type: "image",
+    id: "ganesha1",
+    image: masterProducts["ganesha1"].image,
+    title: masterProducts["ganesha1"].title,
+    category: "Home Accessories",
     colSpan: "col-span-12 md:col-span-4",
-    heightClass: "h-[400px] md:h-[500px]",
-    productDetail: masterProducts["clay-incense-tray"]
+    heightClass: "h-[420px] md:h-[500px]",
+    productDetail: masterProducts["ganesha1"]
   },
   {
     type: "image",
-    id: "minimalist-bench",
-    image: masterProducts["minimalist-bench"].image,
-    title: "The Sonepat Teak Bench",
-    category: "Furniture",
-    colSpan: "col-span-12 md:col-span-8",
-    heightClass: "h-[500px] md:h-[600px]",
-    productDetail: masterProducts["minimalist-bench"]
+    id: "krishna",
+    image: masterProducts["krishna"].image,
+    title: masterProducts["krishna"].title,
+    category: "Home Accessories",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[450px] md:h-[550px]",
+    productDetail: masterProducts["krishna"]
+  },
+  {
+    type: "image",
+    id: "krishna1",
+    image: masterProducts["krishna1"].image,
+    title: masterProducts["krishna1"].title,
+    category: "Vintage",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[450px] md:h-[550px]",
+    productDetail: masterProducts["krishna1"]
   },
   {
     type: "collection",
     id: "collection-2",
-    title: "Earth & Clay",
-    subtitle: "Imperfect silhouettes sculpted from wild river clays and high-fired stoneware.",
-    image: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=800&q=80",
+    title: "Tactile Devotion",
+    subtitle: "Imperfect silhouettes sculpted from seasoned mango wood and heavy sand-cast brass.",
+    image: "/images/category_homeaccesories.png",
     colSpan: "col-span-12 md:col-span-4",
     heightClass: "h-[400px] md:h-[500px]"
-  },
-  {
-    type: "image",
-    id: "textured-plaster-canvas",
-    image: masterProducts["textured-plaster-canvas"].image,
-    title: "Anant Plaster Relic Art",
-    category: "Wall Art",
-    colSpan: "col-span-12 md:col-span-4",
-    heightClass: "h-[450px] md:h-[520px]",
-    productDetail: masterProducts["textured-plaster-canvas"]
   },
   {
     type: "quote",
@@ -239,102 +282,72 @@ export const masonryTiles: MasonryTile[] = [
   },
   {
     type: "image",
-    id: "sculptural-clay-vase",
-    image: masterProducts["sculptural-clay-vase"].image,
-    title: "Chitra Curved Stoneware Vase",
-    category: "Ceramics",
+    id: "laughingbudha",
+    image: masterProducts["laughingbudha"].image,
+    title: masterProducts["laughingbudha"].title,
+    category: "Home Accessories",
     colSpan: "col-span-12 md:col-span-4",
-    heightClass: "h-[350px] md:h-[450px]",
-    productDetail: masterProducts["sculptural-clay-vase"]
+    heightClass: "h-[380px] md:h-[480px]",
+    productDetail: masterProducts["laughingbudha"]
   },
   {
     type: "image",
-    id: "handwoven-linen-throw",
-    image: masterProducts["handwoven-linen-throw"].image,
-    title: "Kora Handspun Linen Throw",
-    category: "Textiles",
-    colSpan: "col-span-12 md:col-span-6",
-    heightClass: "h-[400px] md:h-[500px]",
-    productDetail: masterProducts["handwoven-linen-throw"]
-  },
-  {
-    type: "image",
-    id: "antique-mirror",
-    image: masterProducts["antique-mirror"].image,
-    title: "Darpan Hammered Brass Mirror",
-    category: "Mirrors",
-    colSpan: "col-span-12 md:col-span-6",
-    heightClass: "h-[400px] md:h-[500px]",
-    productDetail: masterProducts["antique-mirror"]
+    id: "ganesha2",
+    image: masterProducts["ganesha2"].image,
+    title: masterProducts["ganesha2"].title,
+    category: "Idols",
+    colSpan: "col-span-12 md:col-span-4",
+    heightClass: "h-[420px] md:h-[500px]",
+    productDetail: masterProducts["ganesha2"]
   }
 ];
 
-// Hotspot room data - beautifully styled living room
+// Interactive Room Image - Spotlighting Buddha, Temple, and Brass Ganesha
 export const interactiveRoomImage = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=90";
 
 export const roomHotspots: Hotspot[] = [
   {
-    id: "hs-teak-bench",
+    id: "hs-temple",
     x: 45,
     y: 72,
-    productDetail: masterProducts["minimalist-bench"]
+    productDetail: masterProducts["temple"]
   },
   {
-    id: "hs-terracotta-urn",
+    id: "hs-buddha",
     x: 25,
     y: 65,
-    productDetail: masterProducts["terracotta-urn"]
+    productDetail: masterProducts["buddha"]
   },
   {
-    id: "hs-brass-lamp",
+    id: "hs-ganesha1",
     x: 62,
     y: 48,
-    productDetail: masterProducts["brass-oil-lamp"]
-  },
-  {
-    id: "hs-plaster-art",
-    x: 48,
-    y: 28,
-    productDetail: masterProducts["textured-plaster-canvas"]
+    productDetail: masterProducts["ganesha1"]
   }
 ];
 
 // Featured collections for horizontal expanding cards
 export const featuredCollections = [
   {
-    id: "living-room",
-    title: "Living Room",
-    description: "Quiet corners, slow mornings, tactile furniture designed to anchor daily gatherings.",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-    count: "24 items"
+    id: "home-accessories",
+    title: "Home Accessories",
+    description: "Architectural soapstone carvings, sand-cast brass bells, and oiled timber sanctuaries designed to warm daily living.",
+    image: "/images/category_homeaccesories.png",
+    count: "4 items"
   },
   {
-    id: "dining",
-    title: "Dining & Culinary",
-    description: "Hand-pressed stoneware, washed linen overlays, and brass serving instruments.",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80",
-    count: "18 items"
+    id: "idols",
+    title: "Idols",
+    description: "Generationally hand-poured lost-wax bronze, beaten copper, and tribal Bastar metal carvings.",
+    image: "/images/category_idols.png",
+    count: "3 items"
   },
   {
-    id: "bedroom",
-    title: "Bedroom Sanctuary",
-    description: "Breathable textured blankets, raw organic cotton, and wooden bedside guardians.",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
-    count: "15 items"
-  },
-  {
-    id: "workspace",
-    title: "The Scholar Workspace",
-    description: "Solid timber organizers, warm brass study lighting, and sand-cast book weights.",
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80",
-    count: "12 items"
-  },
-  {
-    id: "entryway",
-    title: "The Warm Entryway",
-    description: "Expansive beaten mirrors, statement vases, and tenon-joined plinths.",
-    image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80",
-    count: "9 items"
+    id: "vintage",
+    title: "Vintage",
+    description: "Historical Vindhyan sandstone Buddha portraitures, dhokra castings, and medieval-inspired pieces.",
+    image: "/images/category_vintage.png",
+    count: "3 items"
   }
 ];
 
@@ -343,16 +356,16 @@ export const artisanVideoUrl = "https://assets.mixkit.co/videos/preview/mixkit-c
 export const artisanBackupImage = "https://images.unsplash.com/photo-1565192647048-f997ed87f5e2?auto=format&fit=crop&w=1000&q=80";
 
 export const artisanStory = {
-  quote: "“The clay remembers the touch of the wheel. The brass remembers the heat of the fire. Our hands translate memory into permanent shelter.”",
+  quote: "“The brass remembers the heat of the fire. The stone retains the strike of the chisel. Our hands translate devotion into permanent shelter.”",
   lead: "Aarasta is an active partnership between contemporary Indian designers and master generational craftspeople.",
   paragraphs: [
-    "Across the desert plains of Kutch, the heritage metalsmiths of Aligarh, and the traditional weavers of Bhagalpur, we collaborate directly with over fifty artisan families. Each object in our collection represents a lifetime of technical skill and cultural continuity.",
-    "By keeping supply chains compact and honoring the slow pace of hand-production, we preserve the authentic material irregularities of organic fibers, wild soil, and solid cast metals. We believe luxury is found in the traces of human touch."
+    "Across the stonecarvers of Agra, the heritage metal casters of Bastar, and the traditional coppersmiths of Aligarh, we collaborate directly with over fifty artisan families. Each sacred idol in our collection represents a lifetime of technical devotion and cultural continuity.",
+    "By keeping supply chains compact and honoring the slow pace of hand-production, we preserve the authentic material irregularities of organic stone, pure bronze alloys, and solid woods. We believe beauty resides in these traces of human focus."
   ],
   timeline: [
-    { year: "2016", title: "The First Kiln", desc: "Collaborating with three potting families in Kutch, reviving underground wood-firing techniques." },
-    { year: "2019", title: "Aligarh Brass Workshop", desc: "Establishing direct lost-wax cast partnerships to avoid scrap dilution, ensuring pure copper-zinc alloy ratios." },
-    { year: "2022", title: "Bhagalpur Weavers Guild", desc: "Integrating chemical-free handspun flax processing, providing regular sustainable work for 20+ master weavers." },
+    { year: "2016", title: "The First Forge", desc: "Collaborating with Bastar metal casters to revive traditional wood-ash reduction lost-wax castings." },
+    { year: "2019", title: "Agra Soapstone Studio", desc: "Partnering with multi-generational stone carvers to realize intricate symmetric geometric shrines." },
+    { year: "2022", title: "Sandstone Excavation Guild", desc: "Integrating clean carving source channels from Vindhyan range quarries, providing regular sustainable work." },
     { year: "2026", title: "Aarasta Atelier", desc: "Inaugurating our zero-waste architectural decor studio, wedding historical processes with absolute modern minimalism." }
   ]
 };
@@ -394,63 +407,56 @@ export const processSteps = [
 // New Arrivals
 export const newArrivals = [
   {
-    id: "sculptural-clay-vase",
-    title: "Chitra Curved Stoneware Vase",
-    price: "₹14,500",
-    image: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=800&q=80",
-    tag: "Clay Slip"
+    id: "shiva",
+    title: "Meditative Nataraja Shiva",
+    price: "₹26,000",
+    image: "/images/idols/shiva.png",
+    tag: "Lost-Wax Cast"
   },
   {
-    id: "antique-mirror",
-    title: "Darpan Hammered Brass Mirror",
-    price: "₹28,500",
-    image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=800&q=80",
-    tag: "Beaten Brass"
+    id: "temple",
+    title: "Hand-Carved Soapstone Temple",
+    price: "₹34,000",
+    image: "/images/idols/temple.png",
+    tag: "Soapstone"
   },
   {
-    id: "handwoven-linen-throw",
-    title: "Kora Handspun Linen Throw",
-    price: "₹9,500",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
-    tag: "Pure Flax"
+    id: "buddha1",
+    title: "Stone-Carved Buddha Shrine",
+    price: "₹28,000",
+    image: "/images/idols/buddha1.png",
+    tag: "Sandstone"
   },
   {
-    id: "terracotta-urn",
-    title: "The Kansa Terracotta Urn",
-    price: "₹18,500",
-    image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=800&q=80",
-    tag: "Kutch Clay"
-  },
-  {
-    id: "brass-oil-lamp",
-    title: "Mridang Brass Oil Vessel",
-    price: "₹12,200",
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-    tag: "Poured Brass"
+    id: "ganesha1",
+    title: "The Shanti Brass Ganesha",
+    price: "₹19,500",
+    image: "/images/idols/ganesha1.png",
+    tag: "Solid Brass"
   }
 ];
 
-// Shop the Look - Multiple Rooms / Angles
+// Shop the Look - Spotlighting our beautifully uploaded idols
 export const shopTheLookRooms = [
   {
     id: "look-living",
     title: "Morning Sun in the Salon",
     roomImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=90",
-    description: "A meditation on negative space. The Sonepat bench is accompanied by the heavy Kansa terracotta urn to catch low-angled morning light.",
+    description: "A meditation on sacred spaces. The Meditative Dhyana Buddha is accompanied by the Hand-Carved Soapstone Temple to catch low-angled morning light.",
     products: [
-      { id: "minimalist-bench", name: "Sonepat Teak Bench", price: "₹64,000", x: 48, y: 75 },
-      { id: "terracotta-urn", name: "The Kansa Terracotta Urn", price: "₹18,500", x: 18, y: 62 },
-      { id: "handwoven-linen-throw", name: "Kora Handspun Linen Throw", price: "₹9,500", x: 65, y: 70 }
+      { id: "buddha", name: "Meditative Dhyana Buddha", price: "₹24,500", x: 48, y: 75 },
+      { id: "temple", name: "Hand-Carved Soapstone Temple", price: "₹34,000", x: 18, y: 62 },
+      { id: "buddha1", name: "Stone-Carved Buddha Shrine", price: "₹28,000", x: 65, y: 70 }
     ]
   },
   {
     id: "look-study",
     title: "The Quiet Desk",
     roomImage: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1600&q=90",
-    description: "An edit focusing on study rituals. Deep raw wood meets bright-cast brass vessel and glazed clay slab incense catchers.",
+    description: "An edit focusing on daily reflection. Solid wood meets warm yellow sand-cast brass Ganesha and antique copper creations.",
     products: [
-      { id: "brass-oil-lamp", name: "Mridang Brass Oil Vessel", price: "₹12,200", x: 42, y: 46 },
-      { id: "clay-incense-tray", name: "Sandalwood Clay Burner", price: "₹4,800", x: 58, y: 56 }
+      { id: "ganesha1", name: "The Shanti Brass Ganesha", price: "₹19,500", x: 42, y: 46 },
+      { id: "ganesha", name: "Lost-Wax Cast Ganesha", price: "₹18,200", x: 58, y: 56 }
     ]
   }
 ];
@@ -464,25 +470,49 @@ export const journalPosts: JournalPost[] = [
     date: "June 14, 2026",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=800&q=80",
-    category: "Space Theory"
+    category: "Space Theory",
+    author: "Aarav Mehra",
+    content: "Space has a physical voice. In our contemporary rush to populate rooms with sterile, machine-perfect surfaces, we have inadvertently severed the link between texture and emotional tranquility. The Architecture of Quiet is an inquiry into how natural, aged patinas serve as spatial anchors for the human psyche.",
+    bodyBlocks: [
+      {
+        subheading: "The Patina of Time",
+        text: "When a material has lived, it tells a silent story. Raw teak, untreated copper, and hand-beaten brass do not degrade; they grow. They respond to humidity, to the oils of human skin, and to the path of direct sunlight. This evolution offers an architecture of reassurance—an honest acknowledgment that time is an ally, not an enemy."
+      },
+      {
+        subheading: "Atmospheric Balance",
+        text: "Designing for quiet is not about silence; it is about resonance. A room with soft-glazed earthenware can temper sound waves, while low-slung wooden benches lower our physical center of gravity. By combining textured fabrics with heavy, earthy foundations, we create sanctuaries where the mind can finally rest.",
+        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subheading: "Curating the Void",
+        text: "The final element of quiet is negative space. Allowing a corner to remain entirely unoccupied is a luxury. It allows light to draw shapes across the floor and lets the eye travel without interruption. When you place a single, handcrafted vessel in a vast room, you give that object room to breathe, and in doing so, you invite the inhabitant to do the same."
+      }
+    ]
   },
   {
     id: "journal-2",
-    title: "Ash, Wood & Earth",
-    excerpt: "Journey to the subterranean baking pits of Gujarat's master burnishers.",
+    title: "Chisel, Silt & Earth",
+    excerpt: "Journey to the serene workshop sanctuaries of Agra's master stonecarvers.",
     date: "May 28, 2026",
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1565192647048-f997ed87f5e2?auto=format&fit=crop&w=800&q=80",
-    category: "Craft Study"
-  },
-  {
-    id: "journal-3",
-    title: "Living with Linseed Wax",
-    excerpt: "A practical guide to caring for organic finishes and encouraging natural oxidation.",
-    date: "April 10, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80",
-    category: "Maintenance"
+    category: "Craft Study",
+    author: "Prerna Joshi",
+    content: "Beneath the architectural shadows of old India, a silent choreography of chiseling steel, soft sand abrasion, and physical grit unfolds. This is where natural soapstone and sandstone acquire their velvety skin.",
+    bodyBlocks: [
+      {
+        subheading: "The Sculpture from the Block",
+        text: "Unlike modern computer-guided drills, traditional stonecarving happens block by block, chisel blow by chisel blow. Master craftspeople sit cross-legged on fiber mats, listening to the high-pitched ring of metal hitting stone. A deeper ring indicates a stable, dense layer; a hollow pitch warns of internal micro-fissures."
+      },
+      {
+        subheading: "The Art of the Silt Polish",
+        text: "Before the soapstone temple can be declared complete, it is hand-rubbed with fine river silt. The microscopic grains act as an organic abrasive, smoothing out chisel scars without erasing the tactile, hand-hewn facets. It is an art form of sheer concentration and absolute muscle memory."
+      },
+      {
+        subheading: "Preserving the Lineage",
+        text: "This delicate process cannot be replicated by robotic sand-cutters. It relies on a human sense of symmetry and natural material grain. Our collective mission is to support these families, ensuring that the rhythm of chiseling stone continues to hum across Northern India's ancient carving quarters."
+      }
+    ]
   }
 ];
 
@@ -490,14 +520,14 @@ export const journalPosts: JournalPost[] = [
 export const homeTestimonials: Testimonial[] = [
   {
     id: "t-1",
-    quote: "“The Kansa Urn sits at our entry. Every visitor stops to run their hands along the sand facets. It has completely altered the rhythm of arriving home.”",
+    quote: "“The Meditative Dhyana Buddha sits at our entry. Every visitor stops to run their hands along the bronze details. It has completely altered the rhythm of arriving home.”",
     author: "Malvika & Sameer Sen",
     location: "Mumbai",
     image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "t-2",
-    quote: "“Unbelievable weight. The lost-wax brass lamp has a depth of metal that immediately makes contemporary catalog replicas feel incredibly thin.”",
+    quote: "“Unbelievable weight and finish. The lost-wax Ganesha has a depth of metal and warm luster that immediately commands silent focus.”",
     author: "Pranav Mehra",
     location: "New Delhi",
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
@@ -506,10 +536,10 @@ export const homeTestimonials: Testimonial[] = [
 
 // Instagram Section (Beautiful masonry)
 export const instagramPosts = [
-  { id: "i-1", image: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=600&q=80", ratio: "aspect-square" },
-  { id: "i-2", image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80", ratio: "aspect-[3/4]" },
-  { id: "i-3", image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=600&q=80", ratio: "aspect-[3/2]" },
-  { id: "i-4", image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80", ratio: "aspect-square" },
-  { id: "i-5", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80", ratio: "aspect-[3/4]" },
-  { id: "i-6", image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=600&q=80", ratio: "aspect-square" }
+  { id: "i-1", image: "/images/idols/buddha.png", ratio: "aspect-square" },
+  { id: "i-2", image: "/images/idols/ganesha1.png", ratio: "aspect-[3/4]" },
+  { id: "i-3", image: "/images/idols/temple.png", ratio: "aspect-[3/2]" },
+  { id: "i-4", image: "/images/idols/shiva.png", ratio: "aspect-square" },
+  { id: "i-5", image: "/images/idols/buddha1.png", ratio: "aspect-[3/4]" },
+  { id: "i-6", image: "/images/idols/ganesha2.png", ratio: "aspect-square" }
 ];
