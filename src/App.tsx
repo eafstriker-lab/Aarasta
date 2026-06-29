@@ -327,10 +327,15 @@ export default function App() {
           <div className="col-span-1 md:col-span-4 space-y-6">
             <h2 className="text-3xl font-serif tracking-[0.25em] text-warm-ivory">AARASTA</h2>
             <p className="text-xs text-warm-ivory/60 leading-relaxed max-w-sm">
-              A contemporary Indian studio partnering with generation-guided craft circles to build furniture, stoneware, and sculptural fixtures that anchor spaces.
+              Beautiful decor that turns every corner of your home into a space you'll love. Thoughtfully chosen, timelessly designed.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="p-2 border border-warm-ivory/10 rounded-full hover:border-warm-ivory hover:text-muted-brass transition-colors">
+              <a 
+                href="https://www.instagram.com/aarasta_ldh/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-2 border border-warm-ivory/10 rounded-full hover:border-warm-ivory hover:text-muted-brass transition-colors"
+              >
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="#" className="p-2 border border-warm-ivory/10 rounded-full hover:border-warm-ivory hover:text-muted-brass transition-colors">
@@ -360,14 +365,46 @@ export default function App() {
             </ul>
           </div>
 
-          {/* Col 3: Support Links */}
+          {/* Col 3: Category Links */}
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <h4 className="text-[9px] uppercase tracking-widest font-mono text-muted-brass font-medium">STUDIO</h4>
+            <h4 className="text-[9px] uppercase tracking-widest font-mono text-muted-brass font-medium">CATEGORIES</h4>
             <ul className="space-y-2 text-xs text-warm-ivory/70 font-sans">
-              <li><a href="#" className="hover:text-warm-ivory">Custom Orders</a></li>
-              <li><a href="#" className="hover:text-warm-ivory">Our Craft Circles</a></li>
-              <li><a href="#" className="hover:text-warm-ivory">Product Care</a></li>
-              <li><a href="#" className="hover:text-warm-ivory">Press & Media</a></li>
+              <li>
+                <button
+                  onClick={() => {
+                    setActiveCategory("Idols");
+                    setActiveTab("gallery");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="hover:text-warm-ivory cursor-pointer text-left"
+                >
+                  Idols
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    setActiveCategory("Vintage");
+                    setActiveTab("gallery");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="hover:text-warm-ivory cursor-pointer text-left"
+                >
+                  Vintage
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    setActiveCategory("Home Accessories");
+                    setActiveTab("gallery");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="hover:text-warm-ivory cursor-pointer text-left"
+                >
+                  Home Decor
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -403,7 +440,7 @@ export default function App() {
 
         {/* Bottom copyright */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-warm-ivory/10 flex flex-col md:flex-row items-center justify-between text-[10px] font-mono text-warm-ivory/40 gap-4">
-          <span>© 2026 AARASTA ATELIER PRIVATE LIMITED. ALL RIGHTS RESERVED.</span>
+          <span>© 2026 AARASTA. ALL RIGHTS RESERVED. • Crafted by GBA</span>
           <div className="flex gap-6">
             <a href="#" className="hover:text-warm-ivory">TERMS OF CURATION</a>
             <a href="#" className="hover:text-warm-ivory">PRIVACY DIRECTIVES</a>
